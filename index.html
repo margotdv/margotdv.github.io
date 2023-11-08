@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+
+<!-- npx tailwindcss -i css/style-tailwind.css -o css/style.css --watch -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Margot de Villiers étudiante en BUT MMI</title>
+    <meta name="description" content="Présentation, compétences et projets de Margot de Villiers, étudiante en deuxième année en Métiers du Multimédia et de l'Internet à l'IUT de Laval.">
+    <link rel="icon" type="image/svg" href="./images/avatar_fond_jaune.svg" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Train+One">
+</head>
+
+<body class="font-jost text-lg">
+    <!-- BARRE DE NAVIGATION -->
+    <header class="bg-dark-black text-creme text-2xl w-full sticky top-0 z-50
+    lg:text-lg">
+        <div class="relative items-center lg:flex lg:justify-between">
+            <div class="flex justify-between p-4 lg:pl-8">
+                <a href="#accueil" class="h-fit"><img src="./images/icons/house-chimney-solid.svg" alt="Accueil" id="btnAccueil" class="w-6 lg:w-8" /></a>
+                <div id="btnMenu" class="relative lg:hidden">
+                    <img src="./images/icons/bars-solid.svg" alt="Ouvrir le menu" id="ouvrirMenu" class="w-6" />
+                    <img src="./images/icons/xmark-solid.svg" alt="Fermer le menu" id="fermerMenu" class="w-6 absolute top-[-4px] hidden" />
+                </div>
+            </div>
+
+            <div id="menu" class="h-screen w-9/12 bg-dark-black absolute right-0 text-right p-8 clip-path-0 open:clip-path-full 
+            ease-out duration-300 flex flex-col justify-around lg:flex-row lg:justify-end gap-[5vw]
+            lg:static lg:clip-path-full lg:bg-transparent lg:h-fit lg:p-6 lg:pr-10 lg:items-center">
+                <!-- MENU DE NAVIGATION -->
+                <nav>
+                <ul class="flex flex-col gap-8 lg:flex-row lg:gap-12 lg:justify-end">
+                    <li class="hover:text-dark-color focus:text-dark-color ease-out duration-200"><a class="menu-link current:text-dark-color" href="#presentation" data-i18n="presentation">Présentation</a></li>
+                    <li class="hidden lg:block"> | </li>
+                    <li class="hover:text-dark-color focus:text-dark-color ease-out duration-200"><a class="menu-link current:text-dark-color" href="#competences" data-i18n="skills">Compétences</a></li>
+                    <li class="hidden lg:block"> | </li>
+                    <li class="lg:relative">
+                        <a class="hover:text-dark-color current:text-dark-color focus:text-dark-color ease-out duration-200 menu-link" href="#projets" id="btnProjets" data-i18n="projects">Projets</a>
+                        <ul class="text-dark-creme text-xl flex flex-col gap-2
+                        lg:absolute lg:bg-dark-black lg:right-0 lg:top-0 lg:z-50 lg:clip-path-1 lg:projetsOpen:clip-path-full ease-out duration-300" 
+                        id="listeProjets">
+                            <li class="mt-2 hover:text-light-color current:text-light-color focus:text-light-color"><a href="./projetsDev.html" data-i18n="development">Développement</a></li>
+                            <li class="hover:text-light-color current:text-light-color focus:text-light-color"><a href="./projetsGraphisme.html" data-i18n="graphic">Graphisme</a></li>
+                            <li class="hover:text-light-color current:text-light-color focus:text-light-color"><a href="./projetsAudiovisuel.html" data-i18n="audiovisual">Audiovisuel</a></li>
+                            <li class="hover:text-light-color current:text-light-color focus:text-light-color"><a href="./projetsPhoto.html" data-i18n="photography">Photographie</a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden lg:block"> | </li>
+                    <li class="hover:text-dark-color ease-out duration-200"><a class="menu-link current:text-dark-color" href="#contact" data-i18n="contact">Contact</a></li>
+                </ul>
+                </nav>
+
+                <!-- LANGUES -->
+                <div class="flex gap-3 justify-end text-dark-creme lg:text-sm">
+                    <span class="hover:underline cursor-pointer language-btn" data-lang="en">Eng</span>
+                    <span>|</span>
+                    <span class="hover:underline cursor-pointer language-btn" data-lang="fr">Fr</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+        <section id="accueil" class="min-h-screen text-creme p-4 bg-gradient-to-b from-dark-black to-light-black flex flex-col items-center justify-center gap-8">
+            <!-- <span class="text-xl text-dark-color lg:mt-[-4rem]">! Portfolio en cours de construction !</span> -->
+            <h1 class="font-train-one text-4xl text-center lg:text-5xl item-animation">MARGOT DE VILLIERS</h1>
+            <div class="text-2xl lg:text-3xl item-animation">- Portfolio -</div>
+            <img class="w-56 item-animation item-animation1" src="./images/avatar_fond_jaune.svg" alt="avatar">
+        </section>
+
+        <!-- PRESENTATION -->
+        <section id="presentation" class="min-h-screen text-dark-black px-4 py-20 bg-gradient-to-b from-light-color to-dark-color flex flex-col gap-6 items-center
+        lg:flex-row lg:py-10 lg:px-20 lg:justify-center lg:gap-20">
+            <div class="flex gap-6 lg:w-[40vw]">
+                <div class="flex flex-col gap-6 items-center
+                lg:gap-10">
+                    <img class="w-40 max-w-none lg:w-52" src="./images/photo-cv-rect.webp" alt="photo de profil" />
+                    <a href="https://perso.univ-lemans.fr/~i2102191/cv-margot-de-villiers.pdf" target="_blank" rel="noopener noreferrer">
+                        <button class="flex gap-3 items-center text-creme bg-dark-black hover:bg-light-black hover:scale-110 ease-out duration-200 rounded-full w-fit py-1 px-6
+                        lg:px-10 lg:py-2">
+                            <img class="w-4" src="./images/icons/file-lines-solid.svg" alt="picto file" />
+                            <div data-i18n="my-cv">Mon CV</div>
+                        </button>
+                    </a>
+                </div>
+                <p data-i18n="presentation-text">
+                    Étudiante en 3ème année de <strong>BUT MMI</strong> (Métiers du Multimédia et de l'Internet) à Laval,
+                    je recherche un <strong>stage</strong> en <strong>développement web</strong> d'une durée de 14 semaines ou plus, sur la période
+                    du 15 avril au 19 juillet.
+                </p>
+            </div>
+            <div class="flex flex-col gap-6 lg:gap-8">
+                <h2 class="text-3xl font-train-one font-bold lg:text-4xl lg:mt-10" data-i18n="my-formation">MA FORMATION</h2>
+                <div class="flex flex-col gap-6 lg:gap-10">
+                    <div class="relative item-animation">
+                        <img class="w-20 absolute right-0 top-[-3rem]" src="./images/icons/multimedia_circle.svg" alt="picto multimédia" />
+                        <div class="bg-dark-black text-creme p-3 lg:p-6">
+                            <div class=" text-xl" data-i18n="but-formation">2021 - 2024 : <abbr title='Bachelor Universitaire de Technologie' class='no-underline'>BUT</abbr> <abbr title="Métiers du Multimédia et de l'Internet" class='no-underline'>MMI</abbr> à Laval</div>
+                            <div class="text-dark-creme" data-i18n="but-description-formation">Programmation, intégration web, infographie, audiovisuel, communication</div>
+                        </div>
+                    </div>
+                    <div class="relative item-animation">
+                        <img class="w-20 right-0 top-[-3rem] absolute" src="./images/icons/gears_circle.svg" alt="picto ingérieur" />
+                        <div class="bg-dark-black text-creme px-3 py-4 lg:p-6">
+                            <div class="z-10 text-xl" data-i18n="insa-formation">2019 - 2021 : Prépa intégrée à l'<abbr title='Institut National des Sciences Appliquées' class='no-underline'>INSA</abbr> Rennes</div>
+                            <div class="text-dark-creme" data-i18n="insa-description-formation">École d'ingénieur</div>
+                        </div>
+                    </div>
+                    <div class="relative item-animation">
+                        <img class="w-20 right-0 top-[-3rem] absolute" src="./images/icons/diplome_circle.svg" alt="picto diplôme" />
+                        <div class="bg-dark-black text-creme p-3 lg:p-6">
+                            <div class=" text-xl" data-i18n="bac-formation">2019 : Bac S SVT</div>
+                            <div class="text-dark-creme" data-i18n="bac-description-formation">Mention Très Bien, filière européenne et spécialité <abbr title="Informatique et Sciences de Numérique" class="no-underline">ISN</abbr></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPÉTENCES -->
+        <section id="competences" class="min-h-screen text-creme px-4 py-20 bg-gradient-to-b from-dark-black to-light-black
+        lg:py-10 lg:px-20 lg:flex lg:flex-col lg:justify-center lg:gap-20">
+            <h2 class="font-train-one text-3xl mb-10 lg:text-center lg:mb-0 lg:text-4xl" data-i18n="my-skills">MES COMPÉTENCES</h2>
+            <div class="flex flex-col gap-10 justify-center lg:flex-row">
+                <div class="border-dark-color border-2 p-2
+                lg:p-6 lg:grid lg:grid-cols-1 lg:justify-items-center">
+                    <h3 class="text-dark-color text-xl bg-[#161616] px-4 mt-[-1.6rem] w-fit rounded-full
+                    lg:justify-self-start lg:mt-[-2.3rem] lg:bg-[#181818]" data-i18n="programming-languages">Langages de programmation</h3>
+                    <div class="grid grid-cols-4 gap-2 items-baseline mt-3">
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/html.svg" alt="html" />
+                            <span>HTML</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/css.svg" alt="css" />
+                            <span>CSS</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/javascript.svg" alt="js" />
+                            <span>Javascript</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/java.svg" alt="java" />
+                            <span>Java</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/php.svg" alt="php" />
+                            <span>PHP</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/mysql.svg" alt="mysql" />
+                            <span>MySQL</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/mongodb.svg" alt="mongodb" />
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                    <h4 class="text-light-color mt-3 ml-3 lg:w-full lg:ml-6" data-i18n="libraries-frameworks">Bibliothèques et frameworks :</h4>
+                    <div class="grid grid-cols-4 gap-2 items-end w-full">
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/tailwind.svg" alt="tailwind" />
+                            <span>Tailwind</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/jquery.svg" alt="jquery" />
+                            <span>JQuery</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/d3.svg" alt="d3" />
+                            <span>D3</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/react.svg" alt="react" />
+                            <span>React</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/nodejs.svg" alt="nodejs" />
+                            <span>NodeJS</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/symfony.svg" alt="symfony" />
+                            <span>Symfony</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/expressjs.svg" alt="express" />
+                            <span>Express.js</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation">
+                            <img class="w-8" src="./images/logos/bootstrap.svg" alt="bootstrap" />
+                            <span>Bootstrap</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-dark-color border-2 p-2
+                lg:p-6 lg:grid lg:grid-cols-1 lg:justify-center">
+                    <h2 class="text-dark-color text-xl bg-[#1A1A1A] px-4 mt-[-1.6rem] w-fit rounded-full
+                    lg:justify-self-start lg:mt-[-2.4rem] lg:h-fit lg:bg-[#181818]" data-i18n="softwares">Logiciels</h2>
+                    <div class="grid grid-cols-4 gap-2 my-6 lg:my-0 lg:ml-4 items-baseline lg:grid-cols-2 ">
+                        <div class="flex flex-col items-center gap-1 item-animation item-animation2">
+                            <img class="w-8" src="./images/logos/github.svg" alt="github" />
+                            <span>Github</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation item-animation2">
+                            <img class="w-8" src="./images/logos/docker.svg" alt="docker" />
+                            <span>Docker</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation item-animation2">
+                            <img class="w-8" src="./images/logos/android-studio.svg" alt="android studio" />
+                            <span>Android Studio</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation item-animation2">
+                            <img class="w-8" src="./images/logos/wordpress.svg" alt="wordpress" />
+                            <span>Wordpress</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation item-animation2">
+                            <img class="w-6" src="./images/logos/figma.svg" alt="blender" />
+                            <span>Figma</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation item-animation2">
+                            <img class="w-8" src="./images/logos/affinity.svg" alt="affinity" />
+                            <span>Affinity</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation item-animation2">
+                            <img class="w-8" src="./images/logos/davinci-resolve.svg" alt="davinci resolve" />
+                            <span class="text-center">DaVinci Resolve</span>
+                        </div>
+                        <div class="flex flex-col items-center gap-1 item-animation item-animation2">
+                            <img class="w-8" src="./images/logos/blender.svg" alt="blender" />
+                            <span>Blender</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-dark-color border-2 p-2
+                lg:p-6 lg:grid lg:grid-cols-1 lg:justify-items-center">
+                    <h2 class="text-dark-color text-xl bg-[#1C1C1C] px-4 mt-[-1.6rem] w-fit
+                    lg:justify-self-start lg:mt-[-2.4rem] lg:h-fit lg:bg-[#181818]" data-i18n="languages">Langues</h2>
+                    <div class="grid grid-cols-2 gap-2 items-baseline mt-3 ml-2
+                    lg:grid-cols-1 lg:ml-0 lg:mt-[-1.6rem] px-10">
+                        <div class="flex flex-col items-center item-animation item-animation4">
+                            <img class="w-14 mb-1" src="./images/logos/union-jack.svg" alt="royaume-uni" />
+                            <span data-i18n="english">Anglais</span>
+                            <span class="text-dark-creme text-center text-base" data-i18n="c1-level">Niveau C1</span>
+                            <span class="text-dark-creme text-center text-base" data-i18n="father-tongue">langue paternelle</span>
+                        </div>
+                        <div class="flex flex-col items-center item-animation item-animation4">
+                            <img class="w-14 mb-1" src="./images/logos/german-flag.svg" alt="allemagne" />
+                            <span data-i18n="german">Allemand</span>
+                            <span class="text-dark-creme text-center text-base" data-i18n="b1-level">Niveau B1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETS -->
+        <section id="projets" class="min-h-screen text-dark-black px-4 py-20 bg-gradient-to-b from-light-color to-dark-color
+        lg:py-10 lg:px-20 lg:flex lg:flex-col lg:gap-20 lg:justify-center lg:items-center">
+            <h2 class="text-3xl font-train-one font-bold mb-8 lg:text-4xl lg:mb-0 lg:pt-4" data-i18n="my-projects">MES PROJETS</h2>
+            <div class="flex flex-col gap-4 text-right ml-[-1rem] text-creme text-xl
+            lg:flex-row lg:gap-8">
+                <a href="./projetsDev.html" class="item-animation">
+                <div class="bg-dark-black flex flex-col items-end px-4 py-6 w-80 h-40 hover:text-dark-creme hover:scale-105 ease-out duration-200 divHover
+                lg:w-60 lg:h-60 lg:items-center">
+                    <div class="flex flex-col items-center gap-3 justify-around h-full mr-6
+                    lg:justify-start lg:mr-0 lg:mt-10 lg:gap-6">
+                        <span data-i18n="in-development">...en <strong class="font-normal">développement</strong></span>
+                        <div class="relative">
+                            <img class="hoverPic w-12 absolute top-0 invisible" src="./images/icons/code-solid-hover.svg" alt="" />
+                            <img class="w-12" src="./images/icons/code-solid.svg" alt="picto code" />
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="./projetsGraphisme.html" class="item-animation item-animation1">
+                <div class="bg-dark-black flex flex-col items-end px-4 py-6 w-80 h-40 hover:text-dark-creme hover:scale-105 ease-out duration-200 divHover
+                lg:w-60 lg:h-60 lg:items-center">
+                    <div class="flex flex-col items-center gap-3 justify-around h-full mr-6
+                    lg:justify-start lg:mr-0 lg:mt-10 lg:gap-6">
+                        <span data-i18n="in-graphic">...en <strong class="font-normal">graphisme</strong></span>
+                        <div class="relative">
+                            <img class="hoverPic w-14 absolute top-0 invisible" src="./images/icons/palette-hover.svg" alt="" />
+                            <img class="w-14" src="./images/icons/palette.svg" alt="picto graphisme" />
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="./projetsAudiovisuel.html" class="item-animation item-animation2">
+                <div class="bg-dark-black flex flex-col items-end px-4 py-6 w-80 h-40 hover:text-dark-creme hover:scale-105 ease-out duration-200 divHover
+                lg:w-60 lg:h-60 lg:items-center">
+                    <div class="flex flex-col items-center gap-3 justify-around h-full mr-6
+                    lg:justify-start lg:mr-0 lg:mt-10 lg:gap-6">
+                        <span data-i18n="in-audiovisual">...en <strong class="font-normal">audiovisuel</strong></span>
+                        <div class="relative">
+                            <img class="hoverPic w-14 absolute top-0 invisible" src="./images/icons/camera-hover.svg" alt="" />
+                            <img class="w-14" src="./images/icons/camera.svg" alt="camera" />
+                        </div>
+                    </div>
+                </div>
+                </a>
+                <a href="./projetsPhoto.html" class="item-animation item-animation3">
+                <div class="bg-dark-black flex flex-col items-end px-4 py-6 w-80 h-40 hover:text-dark-creme hover:scale-105 ease-out duration-200 divHover
+                lg:w-60 lg:h-60 lg:items-center">
+                    <div class="flex flex-col items-center gap-3 justify-around h-full mr-6
+                    lg:justify-start lg:mr-0 lg:mt-10 lg:gap-6">
+                        <span data-i18n="in-photography">...en <strong class="font-normal">photographie</strong></span>
+                        <div class="relative">
+                            <img class="hoverPic w-12 absolute top-0 invisible" src="./images/icons/appareil-photo-hover.svg" alt="" />
+                            <img class="w-12" src="./images/icons/appareil-photo.svg" alt="appareil photo" />
+                        </div>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <p class="mt-6 lg:mt-[-2rem]" data-i18n="text-projects">
+                L'IUT MMI, c'est : du <strong>développement</strong> et de l'<strong>intégration web</strong>, 
+                du <strong>graphisme</strong>, du <strong>SEO</strong>, du <strong>marketing</strong>, 
+                de la <strong>communication</strong>, de l'<strong>audiovisuel</strong>, de la <strong>photographie</strong>, 
+                et même des <strong>langues</strong>... De quoi être un vrai couteau-suisse !
+            </p>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="min-h-screen text-creme px-4 py-20 bg-gradient-to-b from-dark-black to-light-black
+        lg:py-10 lg:px-20 lg:flex lg:flex-col lg:gap-28 lg:justify-center lg:items-center">
+            <h2 class="text-3xl font-train-one mb-20 lg:mb-0 lg:text-4xl" data-i18n="contact-me">CONTACTEZ-MOI</h2>
+            <div class="flex flex-col gap-10 items-center text-xl lg:flex-row">
+                <div class="flex flex-col gap-4 items-center item-animation">
+                    <img class="w-10" src="./images/icons/envelope-solid.svg" alt="mail" />
+                    <span>margotdv@orange.fr</span>
+                </div>
+                <img class="w-16 lg:w-8" src="./images/icons/trait.svg" alt="" />
+                <div class="flex flex-col gap-4 items-center item-animation">
+                    <img class="w-10" src="./images/icons/phone-solid.svg" alt="téléphone" />
+                    <span>07.85.39.29.66</span>
+                </div>
+                <img class="w-16 lg:w-8" src="./images/icons/trait.svg" alt="" />
+                <div class="flex flex-col gap-4 items-center divContact item-animation">
+                    <a href="https://www.linkedin.com/in/margot-de-villiers-86b899227/" target="_blank" rel="noopener noreferrer">
+                        <div class="relative divHover hover:scale-105 ease-out duration-200">
+                            <img class="w-10" src="./images/logos/linkedin.svg" alt="linkedin" />
+                            <img class="w-10 absolute top-0 hoverPic invisible" src="./images/logos/linkedin-hover.svg" alt="" />
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/margot-de-villiers-86b899227/" target="_blank" rel="noopener noreferrer">
+                        <span class="hover:text-dark-creme hover:scale-105 ease-out duration-200">Margot de Villiers</span>
+                    </a>
+                </div>
+                <img class="w-16 hidden lg:block lg:w-8" src="./images/icons/trait.svg" alt="" />
+                <div class="flex flex-col gap-4 items-center divContact item-animation">
+                    <a href="https://www.facebook.com/margot.devilliers/" target="_blank" rel="noopener noreferrer">
+                        <div class="relative divHover hover:scale-105 ease-out duration-200">
+                            <img class="w-10" src="./images/logos/facebook.svg" alt="facebook" />
+                            <img class="w-10 absolute top-0 hoverPic invisible" src="./images/logos/facebook-hover.svg" alt="" />
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/margot.devilliers/" target="_blank" rel="noopener noreferrer">
+                        <span class="hover:text-dark-creme hover:scale-105 ease-out duration-200">Margot de Vilrs</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+
+    </footer>
+</body>
+
+<script src="./scripts/menu.js"></script>
+<script src="./scripts/projets.js"></script>
+<script src="./scripts/animation.js"></script>
+<script src="./scripts/translations.js"></script>
+
+</html>

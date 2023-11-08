@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .clip-path-0 {
+        clip-path: inset(0 0 0 100%);
+    }
+    .clip-path-full {
+        clip-path: inset(0 0 0 0);
+    }
+    .clip-path-1 {
+        clip-path: inset(0 0 100% 0);
+    }
+
+    /* .video-responsive {
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    } */
+    /* .video-responsive iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
+}
+
+@layer components {
+    .item-animation {
+      opacity: 0;
+      transform: translateY(-20px);
+      transition: opacity 0.5s 200ms, transform 0.5s 200ms; 
+    }
+
+    .item-animation1 {
+        transition: opacity 0.5s 300ms, transform 0.5s 300ms; 
+    }
+    .item-animation2 {
+        transition: opacity 0.5s 400ms, transform 0.5s 400ms; 
+    }
+    .item-animation3 {
+        transition: opacity 0.5s 500ms, transform 0.5s 500ms;
+    }
+    .item-animation4 {
+        transition: opacity 0.5s 600ms, transform 0.5s 600ms;
+    }
+  }

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets en audiovisuel de Margot de Villiers étudiante en BUT MMI</title>
+    <meta name="description" content="Productions vidéos de Margot de Villiers, étudiante en deuxième année en Métiers du Multimédia et de l'Internet à l'IUT de Laval, dans le cadre de son portfolio.">
+    <link rel="icon" type="image/svg" href="./images/avatar_fond_jaune.svg" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Train+One">
+</head>
+
+<body class="font-jost text-creme text-lg">
+    <!-- BARRE DE NAVIGATION -->
+    <header class="bg-dark-black text-creme text-2xl w-full sticky top-0 z-50
+    lg:text-lg">
+        <div class="relative items-center lg:flex lg:justify-between">
+            <div class="flex justify-between p-4 lg:pl-8">
+                <a href="/index.html/#accueil" class="h-fit"><img src="./images/icons/house-chimney-solid.svg" alt="Accueil" id="btnAccueil" class="w-6 lg:w-8" /></a>
+                <div id="btnMenu" class="relative lg:hidden">
+                    <img src="./images/icons/bars-solid.svg" alt="Ouvrir le menu" id="ouvrirMenu" class="w-6" />
+                    <img src="./images/icons/xmark-solid.svg" alt="Fermer le menu" id="fermerMenu" class="w-6 absolute top-[-4px] hidden" />
+                </div>
+            </div>
+
+            <div id="menu" class="h-screen w-9/12 bg-dark-black absolute right-0 text-right p-8 clip-path-0 open:clip-path-full 
+            ease-out duration-300 flex flex-col justify-around lg:flex-row lg:justify-end gap-[5vw]
+            lg:static lg:clip-path-full lg:bg-transparent lg:h-fit lg:p-6 lg:pr-10 lg:items-center">
+                <!-- MENU DE NAVIGATION -->
+                <nav>
+                <ul class="flex flex-col gap-8 lg:flex-row lg:gap-12 lg:justify-end">
+                    <li class="hover:text-dark-color current:text-dark-color focus:text-dark-color ease-out duration-200"><a href="/index.html#presentation" data-i18n="presentation">Présentation</a></li>
+                    <li class="hidden lg:block"> | </li>
+                    <li class="hover:text-dark-color current:text-dark-color focus:text-dark-color ease-out duration-200"><a href="/index.html#competences" data-i18n="skills">Compétences</a></li>
+                    <li class="hidden lg:block"> | </li>
+                    <li class="lg:relative">
+                        <a class="hover:text-dark-color current:text-dark-color focus:text-dark-color ease-out duration-200 current" href="/index.html#projets" id="btnProjets" data-i18n="projects">Projets</a>
+                        <ul class="text-dark-creme text-xl flex flex-col gap-2
+                        lg:absolute lg:bg-dark-black lg:right-0 lg:top-0 lg:z-50 lg:clip-path-1 lg:projetsOpen:clip-path-full ease-out duration-300" 
+                        id="listeProjets">
+                            <li class="mt-2 hover:text-light-color current:text-light-color focus:text-light-color"><a href="./projetsDev.html" data-i18n="development">Développement</a></li>
+                            <li class="hover:text-light-color current:text-light-color focus:text-light-color"><a href="./projetsGraphisme.html" data-i18n="graphic">Graphisme</a></li>
+                            <li class="hover:text-light-color current:text-light-color focus:text-light-color current"><a href="./projetsAudiovisuel.html" data-i18n="audiovisual">Audiovisuel</a></li>
+                            <li class="hover:text-light-color current:text-light-color focus:text-light-color"><a href="./projetsPhoto.html" data-i18n="photography">Photographie</a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden lg:block"> | </li>
+                    <li class="hover:text-dark-color ease-out duration-200"><a href="/index.html#contact" data-i18n="contact">Contact</a></li>
+                </ul>
+                </nav>
+
+                <!-- LANGUES -->
+                <div class="flex gap-3 justify-end text-dark-creme lg:text-sm">
+                    <span class="hover:underline cursor-pointer language-btn" data-lang="en">Eng</span>
+                    <span>|</span>
+                    <span class="hover:underline cursor-pointer language-btn" data-lang="fr">Fr</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-gradient-to-b from-dark-black to-light-black min-h-screen p-4 pb-16 relative
+    lg:px-36">
+        <a class="fixed bg-dark-color text-creme rounded-full flex gap-3 items-center py-1 px-4 justify-center divHover
+        hover:text-dark-black hover:bg-light-color hover:font-bold hover:scale-105 ease-out duration-200
+        lg:left-4" 
+        href="./index.html#projets" id="btnRetour">
+            <div class="relative">
+                <img class="w-2" src="./images/icons/fleche-creme.svg" alt="fleche" />
+                <img class="absolute top-0 w-2 invisible z-20 hoverPic" src="./images/icons/fleche-noire.svg" alt="" />
+            </div>
+            <span data-i18n="back">Retour</span>
+        </a>
+        <h1 class="font-train-one text-4xl text-center mb-12 pt-12 lg:mb-16 lg:pt-0" data-i18n="videos-motion-design">VIDÉOS ET MOTION DESIGN</h1>
+        <div class="flex flex-col gap-12 items-center">
+            <!-- Panda -->
+            <div class="flex flex-col gap-2 items-center lg:flex-row lg:gap-8">
+                <div class="relative pb-[56.25%] pt-[30px] h-0 overflow-hidden lg:h-auto lg:p-0 lg:overflow-visible">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/vimb7_R6KtU" allowfullscreen frameborder="0"
+                    class="w-full h-full absolute top-0 left-0 lg:w-[560px] lg:h-[315px] lg:static">
+                    </iframe>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <a href="https://www.youtube.com/watch?v=vimb7_R6KtU" target="_blank" rel="noopener noreferrer">
+                        <h2 class="text-2xl text-dark-color lg:text-3xl hover:text-[2rem] ease-out duration-100" data-i18n="explainer-panda">Explainer pour une extension Google</h2>
+                    </a>
+                    <p data-i18n="explainer-panda-description">
+                        Cette vidéo présente l'extension Google Panda au travers d'un petit scénario. Sur le tournage, j'ai été 
+                        actrice en plus de gérer la <strong>lumière</strong> sur les scènes où je ne jouais pas. J'ai ensuite participé au montage
+                        où j'ai pu régler les <strong>raccords</strong>, la <strong>musique</strong>, le <strong>motion design</strong> 
+                        et un peu d'<strong>étalonnage</strong>.
+                    </p>
+                </div>
+            </div>
+
+            <!-- 3D BlaBlaCar -->
+            <div class="flex flex-col gap-2 text-right items-center lg:flex-row lg:gap-8">
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <a href="https://www.youtube.com/watch?v=9_4BsFv9f7Y" target="_blank" rel="noopener noreferrer">
+                        <h2 class="text-2xl text-dark-color lg:text-3xl hover:text-[2rem] ease-out duration-100" data-i18n="3d-animation-blablacar">Animation 3D BlaBlaCar</h2>
+                    </a>
+                    <p data-i18n="3d-animation-blablacar-description">
+                        Cette vidéo a un objectif de sensibilisation aussi bien que publicitaire. Réalisée sur <strong>Blender</strong>,
+                        elle m'a permis de découvrir les bases de l'<strong>animation 3D</strong>. Elle s'inscrit dans un projet sur la qualité de l'air (voir la dataviz dans
+                        les projets de développement).
+                    </p>
+                </div>
+                <div class="relative pb-[56.25%] pt-[30px] h-0 overflow-hidden lg:h-auto lg:p-0 lg:overflow-visible">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9_4BsFv9f7Y" allowfullscreen frameborder="0"
+                    class="w-full h-full absolute top-0 left-0 lg:w-[560px] lg:h-[315px] lg:static">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- Kiwi -->
+            <div class="flex flex-col gap-2 items-center lg:flex-row lg:gap-8">
+                <div class="relative pb-[56.25%] pt-[30px] h-0 overflow-hidden lg:h-auto lg:p-0 lg:overflow-visible">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/fYVTY3fkqZA" allowfullscreen frameborder="0"
+                    class="w-full h-full absolute top-0 left-0 lg:w-[560px] lg:h-[315px] lg:static">
+                    </iframe>
+                </div>
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <a href="https://youtu.be/fYVTY3fkqZA" target="_blank" rel="noopener noreferrer">
+                        <h2 class="text-2xl text-dark-color lg:text-3xl hover:text-[2rem] ease-out duration-100" data-i18n="kiwi-motion-design">Motion design pour l'application Kiwi</h2>
+                    </a>
+                    <p data-i18n="kiwi-motion-design-description">
+                        Ce motion design présente l'application mobile Kiwi. Il a été réalisé avec l'onglet Fusion de <strong>DaVinci Resolve</strong>.
+                        Nous ne devions pas utiliser de musique mais uniquement des bruitages.
+                    </p>
+                </div>
+            </div>
+
+            <!-- CV Vidéo -->
+            <div class="flex flex-col gap-2 text-right items-center lg:flex-row lg:gap-8">
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <a href="https://www.youtube.com/watch?v=LEiOZvs6PGQ" target="_blank" rel="noopener noreferrer">
+                        <h2 class="text-2xl text-dark-color lg:text-3xl hover:text-[2rem] ease-out duration-100" data-i18n="cv-video">CV vidéo</h2>
+                    </a>
+                    <p data-i18n="cv-video-description">
+                        J'ai réalisé ce CV vidéo en première année avec <strong>DaVinci Resolve</strong>. Je ne connaissais
+                        pas encore bien le logiciel et n'avais donc pas utilisé le système de noeuds pour le motion design. 
+                        Ce CV constitue plus une première expérience de montage.
+                    </p>
+                </div>
+                <div class="relative pb-[56.25%] pt-[30px] h-0 overflow-hidden lg:h-auto lg:p-0 lg:overflow-visible">
+                    <iframe width="560" height="315" src="https://youtube.com/embed/LEiOZvs6PGQ" allowfullscreen frameborder="0"
+                    class="w-full h-full absolute top-0 left-0 lg:w-[560px] lg:h-[315px] lg:static">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+</body>
+
+<script src="./scripts/menu.js"></script>
+<script src="./scripts/projets.js"></script>
+<script src="./scripts/animation.js"></script>
+<script src="./scripts/translations.js"></script>
+
+</html>

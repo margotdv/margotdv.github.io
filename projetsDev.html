@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets en développement de Margot de Villiers étudiante en BUT MMI</title>
+    <meta name="description" content="Projets en développement web et programmation de Margot de Villiers, étudiante en deuxième année en Métiers du Multimédia et de l'Internet à l'IUT de Laval, dans le cadre de son portfolio.">
+    <link rel="icon" type="image/svg" href="./images/avatar_fond_jaune.svg" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Jost">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Train+One">
+</head>
+
+<body class="font-jost text-creme text-lg">
+    <!-- BARRE DE NAVIGATION -->
+    <header class="bg-dark-black text-creme text-2xl w-full sticky top-0 z-50
+    lg:text-lg">
+        <div class="relative items-center lg:flex lg:justify-between">
+            <div class="flex justify-between p-4 lg:pl-8">
+                <a href="/index.html/#accueil" class="h-fit"><img src="./images/icons/house-chimney-solid.svg" alt="Accueil" id="btnAccueil" class="w-6 lg:w-8" /></a>
+                <div id="btnMenu" class="relative lg:hidden">
+                    <img src="./images/icons/bars-solid.svg" alt="Ouvrir le menu" id="ouvrirMenu" class="w-6" />
+                    <img src="./images/icons/xmark-solid.svg" alt="Fermer le menu" id="fermerMenu" class="w-6 absolute top-[-4px] hidden" />
+                </div>
+            </div>
+
+            <div id="menu" class="h-screen w-9/12 bg-dark-black absolute right-0 text-right p-8 clip-path-0 open:clip-path-full 
+            ease-out duration-300 flex flex-col justify-around lg:flex-row lg:justify-end gap-[5vw]
+            lg:static lg:clip-path-full lg:bg-transparent lg:h-fit lg:p-6 lg:pr-10 lg:items-center">
+                <!-- MENU DE NAVIGATION -->
+                <nav>
+                <ul class="flex flex-col gap-8 lg:flex-row lg:gap-12 lg:justify-end">
+                    <li class="hover:text-dark-color current:text-dark-color focus:text-dark-color ease-out duration-200"><a href="/index.html#presentation" data-i18n="presentation">Présentation</a></li>
+                    <li class="hidden lg:block"> | </li>
+                    <li class="hover:text-dark-color current:text-dark-color focus:text-dark-color ease-out duration-200"><a href="/index.html#competences" data-i18n="skills">Compétences</a></li>
+                    <li class="hidden lg:block"> | </li>
+                    <li class="lg:relative">
+                        <a class="hover:text-dark-color current:text-dark-color focus:text-dark-color ease-out duration-200 current" href="/index.html#projets" id="btnProjets" data-i18n="projects">Projets</a>
+                        <ul class="text-dark-creme text-xl flex flex-col gap-2
+                        lg:absolute lg:bg-dark-black lg:right-0 lg:top-0 lg:z-50 lg:clip-path-1 lg:projetsOpen:clip-path-full ease-out duration-300" 
+                        id="listeProjets">
+                            <li class="mt-2 hover:text-light-color current:text-light-color focus:text-light-color current"><a href="./projetsDev.html" data-i18n="development">Développement</a></li>
+                            <li class="hover:text-light-color current:text-light-color focus:text-light-color"><a href="./projetsGraphisme.html" data-i18n="graphic">Graphisme</a></li>
+                            <li class="hover:text-light-color current:text-light-color focus:text-light-color"><a href="./projetsAudiovisuel.html" data-i18n="audiovisual">Audiovisuel</a></li>
+                            <li class="hover:text-light-color current:text-light-color focus:text-light-color"><a href="./projetsPhoto.html" data-i18n="photography">Photographie</a></li>
+                        </ul>
+                    </li>
+                    <li class="hidden lg:block"> | </li>
+                    <li class="hover:text-dark-color ease-out duration-200"><a href="/index.html#contact" data-i18n="contact">Contact</a></li>
+                </ul>
+                </nav>
+
+                <!-- LANGUES -->
+                <div class="flex gap-3 justify-end text-dark-creme lg:text-sm">
+                    <span class="hover:underline cursor-pointer language-btn" data-lang="en">Eng</span>
+                    <span>|</span>
+                    <span class="hover:underline cursor-pointer language-btn" data-lang="fr">Fr</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="bg-gradient-to-b from-dark-black to-light-black min-h-screen p-4 pb-16 relative
+    lg:px-36">
+        <a class="fixed bg-dark-color text-creme rounded-full flex gap-3 items-center py-1 px-4 justify-center divHover
+        hover:text-dark-black hover:bg-light-color hover:font-bold hover:scale-105 ease-out duration-200
+        lg:left-4" 
+        href="./index.html#projets" id="btnRetour">
+            <div class="relative">
+                <img class="w-2" src="./images/icons/fleche-creme.svg" alt="fleche" />
+                <img class="absolute top-0 w-2 invisible z-20 hoverPic" src="./images/icons/fleche-noire.svg" alt="" />
+            </div>
+            <span data-i18n="back">Retour</span>
+        </a>
+        <h1 class="font-train-one text-4xl text-center mb-12 pt-12 lg:mb-16 lg:pt-0" data-i18n="websites-programmation">SITES WEB ET PROGRAMMATION</h1>
+        <div class="flex flex-col gap-12 items-center">
+
+            <!-- Jeu de palets -->
+            <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-8">
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation text-right">
+                    <h2 class="text-2xl text-dark-color lg:text-3xl" data-i18n="air-hockey">Jeu de palets</h2>
+                    <p data-i18n="air-hockey-description">
+                       En équipe, nous avons développé un jeu de palets sur <strong>Android Studio</strong> en seulement
+                       2 semaines. Nous avons décidé de nous concentrer principalement sur la <strong>physique du jeu</strong> (vitesse de la balle,
+                       force de frappe) plutôt que sur son design. L'interface comprend un historique des parties et un classement des
+                       meilleurs joueurs et toute l'application a été développée en <strong>Java</strong>.
+                    </p>
+                </div>
+                <img class="w-full lg:w-[26vw]" src="./images/projets/jeu_de_palets.webp" alt="jeu de palets" />
+            </div>
+
+            <!-- Site e-commerce -->
+            <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-8">
+                <img class="w-full lg:w-[42vw]" src="./images/projets/woo_commerce.webp" alt="jeu de palets" />
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <h2 class="text-2xl text-dark-color lg:text-3xl" data-i18n="e-commerce-website">Site d'e-commerce</h2>
+                    <p data-i18n="e-commerce-website-description">
+                       De la même manière que le jeu de palets, nous avons développé cette plateforme en équipe et en deux semaine.
+                       Grâce à l'extension WordPress <strong>WooCommerce</strong>, nous avons créé un site de commerce en ligne avec des
+                       articles récupérés grâce à l'<strong>API</strong> d'Amazon. Nous avons utilisé <strong>React</strong> et
+                       la librairie <strong>MobX</strong> pour le front, et <strong>Symfony</strong> pour le back.
+                    </p>
+                </div>
+            </div>
+
+            <!-- PlayCanva -->
+            <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-8 text-right">
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <a href="https://perso.univ-lemans.fr/~i2102191/guitare-3d/" target="_blank" rel="noopener noreferrer">    
+                        <h2 class="text-2xl text-dark-color hover:text-[2rem] ease-out duration-100 lg:text-3xl" data-i18n="playcanva">Personnalisation interactive d'un objet 3D</h2>
+                    </a>
+                    <p data-i18n="playcanva-description">
+                        J'ai réalisé cet outil depuis le moteur de jeu 3D <strong>PlayCanvas</strong>. Il permet de personnaliser un objet 3D, fonctionnalité utile notamment dans un
+                        contexte commercial. Ce projet m'a permis d'allier <strong>graphisme 3D</strong> et développement en <strong>JavaScript</strong>.
+                    </p>
+                </div>
+                <a href="https://perso.univ-lemans.fr/~i2102191/guitare-3d/" target="_blank" rel="noopener noreferrer">
+                    <img class="w-full hover:grayscale ease-out duration-200 lg:w-[42vw] max-w-none" src="./images/projets/playcanvas.webp" alt="Projet guitare sur PlayCanvas" />
+                </a>
+            </div>
+
+            <!-- Dataviz qualité de l'air -->
+            <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-8">
+                <a href="https://perso.univ-lemans.fr/~i2102191/dataviz-pollution-air/#" target="_blank" rel="noopener noreferrer">
+                    <img class="w-full hover:grayscale ease-out duration-200 lg:w-[42vw] max-w-none" src="./images/projets/dataviz-atmo.webp" alt="Dataviz atmo" />
+                </a>
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <a href="https://perso.univ-lemans.fr/~i2102191/dataviz-pollution-air/#" target="_blank" rel="noopener noreferrer">    
+                        <h2 class="text-2xl text-dark-color hover:text-[2rem] ease-out duration-100 lg:text-3xl" data-i18n="d3-dataviz">Dataviz sur le trafic routier et la qualité de l'air</h2>
+                    </a>
+                    <p data-i18n="d3-dataviz-description">
+                        Cette dataviz a été réalisée à partir de l'analyse des différentes données et a pour but de comparer le lien entre 
+                        le trafic routier sur l'axe A10 et la qualité de l'air sur cette même zone. Elle a été développée en <strong>JQuery</strong> 
+                        ainsi qu'à l'aide de la bibliothèque graphique <strong>D3</strong>. 
+                    </p>
+                </div>
+            </div>
+
+            <!-- Snake -->
+            <div class="flex flex-col items-center gap-2 text-right lg:flex-row lg:gap-8">
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <h2 class="text-2xl text-dark-color lg:ml-[-0.3rem] lg:text-3xl">Snake</h2>
+                    <p class="lg:ml-[-0.3rem]" data-i18n="snake-description">
+                        Grâce aux bibliothèques graphiques <strong>Swing</strong> et <abbr class="no-underline" title="Abstract Window Toolkit"><strong>AWT</strong></abbr> de <strong>Java</strong>, j'ai pu coder une version du célèbre jeu Snake.
+                    </p>
+                </div>
+                <img class="w-full lg:w-[50vw] lg:ml-[-1rem]" src="./images/projets/snake.webp" alt="jeu Snake" />
+            </div>
+
+            <!-- Tips&Fix -->
+            <div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-8">
+                <img class="w-full lg:w-[48vw]" src="./images/projets/tipsandfix.webp" alt="Tips&Fix" />
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <h2 class="text-2xl text-dark-color lg:text-3xl" data-i18n="forum-wordpress">Forum et site Wordpress</h2>
+                    <p data-i18n="forum-wordpress-description">Pour ce projet, j'ai pu réaliser un site <strong>Wordpress</strong> relié à une partie forum développée 
+                        en <strong>PHP</strong>, <strong>HTML</strong>, <strong>CSS</strong> et <strong>JavaScript</strong>.
+                        J'ai ainsi eu l'occasion de créer et manipuler une <strong>base de données</strong> avec le langage <strong>MySQL</strong>.
+                    </p>
+                    <p data-i18n="forum-wordpress-description2">
+                        Le forum et le site sont hébergés sur un serveur accessible uniquement depuis l'IUT, je ne peux donc pas les mettre à disposition. 
+                    </p>
+                </div>
+            </div>
+
+            <!-- CV Numérique -->
+            <div class="flex flex-col items-center text-right gap-2 lg:gap-8 lg:flex-row">
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <a href="https://perso.univ-lemans.fr/~i2102191/sae_cv_num/" target="_blank" rel="noopener noreferrer">
+                        <h2 class="text-2xl text-dark-color lg:text-3xl hover:text-[2rem] ease-out duration-100" data-i18n="first-website">Mon premier site web</h2>
+                    </a>
+                    <p data-i18n="first-website-description">Ce CV numérique a été mon tout premier site réalisé à l'IUT. Il a été développé en <strong>HTML</strong>, 
+                        <strong>CSS</strong> et <strong>PHP</strong> uniquement et contient un formulaire de contact. Il n'est
+                        par contre pas responsive.
+                    </p>
+                </div>
+                <a href="https://perso.univ-lemans.fr/~i2102191/sae_cv_num/" target="_blank" rel="noopener noreferrer">
+                    <img class="w-full hover:grayscale ease-out duration-200 lg:w-[48vw] lg:max-w-none" src="./images/projets/cv_num.webp" alt="CV numérique" />
+                </a>
+            </div>
+
+            <!-- Portfolio -->
+            <div class="flex flex-col items-center gap-2 lg:gap-8 lg:flex-row">
+                <a href="./index.html" target="_blank" rel="noopener noreferrer">
+                    <img class="w-full hover:grayscale ease-out duration-200 lg:w-[48vw] lg:max-w-none" src="./images/projets/portfolio.webp" alt="CV numérique" />
+                </a>
+                <div class="flex flex-col gap-1 lg:gap-4 item-animation">
+                    <a href="./index.html" target="_blank" rel="noopener noreferrer">
+                        <h2 class="text-2xl text-dark-color lg:text-3xl hover:text-[2rem] ease-out duration-100" data-i18n="my-protfolio">Mon portfolio</h2>
+                    </a>
+                    <p data-i18n="my-portfolio-description">Et bien sûr ce portfolio fait partie des mes réalisations en développement web. J'ai utilisé ici le 
+                        framework <strong>Tailwind</strong>, ainsi que <strong>JavaScript</strong> et bien entendu HTML et CSS. 
+                        Ce site est <strong>responsive</strong> et accessible depuis un mobile.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+<script src="./scripts/menu.js"></script>
+<script src="./scripts/projets.js"></script>
+<script src="./scripts/animation.js"></script>
+<script src="./scripts/translations.js"></script>
+
+</html>
