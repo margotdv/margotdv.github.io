@@ -8,6 +8,7 @@
   function init() {
     loadTranslation(currentLanguage);
     let languageBtns = document.querySelectorAll('.language-btn');
+    let cvLink = document.querySelector("#cv-link");
 
     // Ecouteur de clic sur les boutons
     languageBtns.forEach(button => {
@@ -19,6 +20,8 @@
           loadTranslation(selectedLanguage);
           localStorage.setItem('selectedLanguage', selectedLanguage);
         }
+
+        (selectedLanguage === 'en') ? cvLink.href = './resources/cv-margot-de-villiers-english.pdf' : cvLink.href = './resources/cv-margot-de-villiers.pdf';
       });
     })
   }

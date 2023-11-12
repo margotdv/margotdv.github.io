@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="CV numérique de Margot de Villiers, étudiante en BUT MMI à l'IUT de Laval. Ce projet a été réalisé dans le cadre de ses études en première année.">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" type="text/css" />
+    <link rel="stylesheet" href="./css/all.min.css" type="text/css" />
+    <title>CV numérique de Margot de Villiers étudiante en BUT MMI à l'IUT de Laval</title>
+    <link href="https://fonts.googleapis.com/css2?family=Advent+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1><a href="#accueil">CV Margot de Villiers</a></h1>
+        <nav>
+            <div>
+                <div><a href="#presentation">Présentation</a> | <a href="#competences">Compétences</a> | <a
+                        href="#parcours">Parcours</a> | <a href="#galerie">Galerie</a> | <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil">
+            <div>
+                <h2>Bienvenue sur mon CV numérique !</h2>
+                <img src="./images/avatar.webp" alt="Avatar de Margot de Villiers" />
+            </div>
+            <div class="fleche">
+                <p>Cliquez pour dérouler</p>
+                <a href="#presentation"><img src="./images/fleche.svg" alt="Flèche pour scroller en bas" /></a>
+            </div>
+        </section>
+        <div class="slider-horizontal">
+            <section id="presentation">
+                <h2>Petite présentation</h2>
+                <div class="presentation">
+                    <img src="./images/photo_cv.webp" alt="Photo de Margot de Villiers" />
+                    <div class="texte">
+                        <p>
+                            Je m'appelle Margot de Villiers, j'ai 20 ans et j'habite à Laval.
+                        </p>
+                        <p>
+                            Étudiante en première année à l'<abbr
+                                title="Institut Universitaire de Technologie">IUT</abbr>
+                            de Laval en <abbr title="Métiers du Multimédia et de l'Internet">MMI</abbr>, je suis
+                            particulièrement interessée par les domaines du graphisme, de l'audiovisuel et du
+                            développement.
+                        </p>
+                    </div>
+                </div>
+                <div class="qualites-defauts">
+                    <div class="qualites">
+                        <div class="thumb-up" style="cursor: pointer">
+                            <i class="fas fa-thumbs-up fa-6x"></i>
+                        </div>
+                        <input type="checkbox" title="">
+                        <div class="texte">
+                            <h3>Quelques unes de mes qualités</h3>
+                            <p>
+                                Polyvalente et curieuse, j'aime apprendre de nouvelles compétences afin de m'adapter
+                                au mieux à chaque situation.
+                            </p>
+                            <p>
+                                Organisée, j'ai un esprit logique qui me permet de diviser au mieux un travai ou projet
+                                en plusieurs tâches.
+                            </p>
+                            <p>
+                                Sociable, j'apprécie travailler en groupe et suis ouverte à toute proposition ou
+                                critique.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="defauts">
+                        <div class="thumb-down" style="cursor: pointer">
+                            <i class="fas fa-thumbs-down fa-6x"></i>
+                        </div>
+                        <input type="checkbox" title="">
+
+                        <div class="texte" id="texte-defaut">
+                            <h3>Mes principaux défauts</h3>
+                            <p>
+                                Obstinée, j'ai tendance à avoir du mal à passer à autre chose même si c'est nécessaire.
+                            </p>
+                            <p>
+                                Je manque également parfois de tact et suis un peu trop franche.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <a href="#competences"><img src="./images/petite_fleche.svg" alt="Flèche pour scroller à droite"
+                        class="petite-fleche droite" /></a>
+            </section>
+
+            <section id="competences">
+                <h2>Mes compétences</h2>
+                <a href="#presentation"><img src="./images/petite_fleche.svg" alt="Flèche pour scroller à gauche"
+                        class="petite-fleche gauche" /></a>
+                <a href="#parcours"><img src="./images/petite_fleche.svg" alt="Flèche pour scroller à droite"
+                        class="petite-fleche droite" /></a>
+                <div class="div1">
+                    <div class="competences">
+                        <div class="ligne">
+                            <div class="item-competence">
+                                <img src="./images/competences/affinity_designer.svg" alt="Logo Affinity Designer" />
+                                <h3>Affinity Designer</h3>
+                                <progress max="100" value="70">70 %</progress>
+                            </div>
+                            <div class="item-competence">
+                                <img src="./images/competences/affinity_photo.svg" alt="Logo Affinity Photo" />
+                                <h3>Affinity Photo</h3>
+                                <progress max="100" value="50">40 %</progress>
+                            </div>
+                            <div class="item-competence">
+                                <img src="./images/competences/affinity_publisher.svg" alt="Logo Affinity Publisher" />
+                                <h3>Affinity Publisher</h3>
+                                <progress max="100" value="35">35 %</progress>
+                            </div>
+                            <div class="item-competence">
+                                <img src="./images/competences/pix_certif.svg" alt="Badge de certification pix 518 points"
+                                    class="pix" />
+                                <h3>Certification Pix</h3>
+                            </div>
+                        </div>
+                        <div class="ligne">
+                            <div class="item-competence">
+                                <img src="./images/competences/html.svg" alt="Logo HTML 5" />
+                                <h3>HTML</h3>
+                                <progress max="100" value="70">70 %</progress>
+                            </div>
+                            <div class="item-competence">
+                                <img src="./images/competences/css.svg" alt="Logo CSS 3" />
+                                <h3>CSS</h3>
+                                <progress max="100" value="60">60 %</progress>
+                            </div>
+                            <div class="item-competence">
+                                <img src="./images/competences/php.svg" alt="Logo PHP"/>
+                                <h3>PHP</h3>
+                                <progress max="100" value="35">35 %</progress>
+                            </div>
+                            <div class="item-competence">
+                                <img src="./images/competences/java.svg" alt="Logo Java" />
+                                <h3>Java</h3>
+                                <progress max="100" value="35">35 %</progress>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="permis">
+                        <img src="./images/competences/voiture.svg" alt="Voiture" />
+                        <span>Permis B</span>
+                    </div>
+                </div>
+                <div class="langues">
+                    <div class="english">
+                        <object data="./images/competences/drapeau_uk.svg" type="image/svg+xml"
+                            aria-label="Anglais niveau C1" class="drapeau-uk">
+                        </object>
+                    </div>
+                    <div class="deutsch">
+                        <object data="./images/competences/drapeau_deutsch.svg" type="image/svg+xml"
+                            aria-label="Allemand niveau B1" class="drapeau-de">
+                        </object>
+                    </div>
+                </div>
+            </section>
+
+            <section id="parcours">
+                <a href="#competences"><img src="./images/petite_fleche.svg" alt="Flèche pour scroller à gauche"
+                        class="petite-fleche gauche" /></a>
+                <a href="#galerie"><img src="./images/petite_fleche.svg" alt="Flèche pour scroller à droite"
+                        class="petite-fleche droite" /></a>
+                <div class="parcours">
+                    <div class="formation">
+                        <h2>Ma formation</h2>
+                        <object data="./images/schema_formation.svg" type="image/svg+xml"
+                            aria-label="Schéma présentant ma formation : Bac S SVT Mention Très Bien en 2019, 2 ans à l'INSA Rennes puis BUT MMI" class="schema-formation">
+                        </object>
+                    </div>
+                    <div class="experiences-pro">
+                        <h2>Mes expériences professionnelles</h2>
+                        <div>
+                            <div class="caissiere">
+                                <i class="fas fa-cash-register fa-4x"></i>
+                                <div class="caissiere-texte">
+                                    <h3>Hôtesse de caisse</h3>
+                                    <p>
+                                        J'ai travaillé en tant qu'hôtesse de caisse à l'Intermarché des Longchamps à
+                                        Rennes d'avril
+                                        à juin 2021. En contact direct avec les clients, j'ai pu développer mes
+                                        compétences relationnelles
+                                        ainsi que la rigueur nécessaire à cet emploi.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="ps-afeh">
+                                <i class="fas fa-hand-sparkles fa-4x"></i>
+                                <div class="ps-afeh-texte">
+                                    <h3>Personnel de service</h3>
+                                    <p>
+                                        Pendant le mois d'août 2019, j'ai travaillé au ménage, à la plonge, au service
+                                        et au linge
+                                        dans une colonie de vacances pour adultes handicapés organisée par l'
+                                        <abbr title="Association des Famille d'Enfants Handicapés">AFEH</abbr> à Choyes.
+                                        En plus
+                                        d'avoir pu développer des compétences variées, j'ai beaucoup appris auprès des
+                                        vacanciers
+                                        qui m'ont émue et sensibilisée aux différents handicaps mentaux et physiques.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="babysitting">
+                                <i class="fas fa-baby fa-4x"></i>
+                                <div class="babysitting-texte">
+                                    <h3>Babysitting</h3>
+                                    <p>
+                                        En plus de plusieurs babysittings ponctuels, j'ai gardé pendant l'année scolaire
+                                        2019 une petite
+                                        fille de 7 ans tous les mercredis après-midi. J'étais chargée de la récupérer à
+                                        son école,
+                                        de préparer son repas et de l'accompagner à ses activités extra-scolaires. Cette
+                                        expérience
+                                        m'a notamment permis de développer mon sens des responsabilités.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="galerie">
+                <a href="#parcours"><img src="./images/petite_fleche.svg" alt="Flèche pour scroller à gauche"
+                        class="petite-fleche gauche" /></a>
+                <a href="#contact"><img src="./images/petite_fleche.svg" alt="Flèche pour scroller à droite"
+                        class="petite-fleche droite" /></a>
+                <h2>Quelques-uns de mes projets</h2>
+                <div class="galerie">
+                    <div class="ligne">
+                        <div class="affiche-dessin">
+                            <a href="projet.php?name=0"><div class="texte">
+                                <p>Création d'une plaquette avec affiche dessinée pour le festival Étonnants Voyageurs
+                                </p>
+                            </div></a>
+                        </div>
+                        <div class="affiche-photo">
+                            <a href="projet.php?name=1"><div class="texte">
+                                <p>Création d'une affiche photographie pour le festival Étonnants Voyageurs</p>
+                            </div></a>
+                        </div>
+                        <div class="affiche-typo">
+                            <a href="projet.php?name=2"><div class="texte">
+                                <p>Création d'une affiche typographique pour le festival Étonnants Voyageurs</p>
+                            </div></a>
+                        </div>
+                    </div>
+                    <div class="ligne">
+                        <div class="charte">
+                            <a href="projet.php?name=3"><div class="texte">
+                                <p>Création d'un logo et sa charte graphique pour le festival Étonnants Voyageurs</p>
+                            </div></a>
+                        </div>
+                        <div class="cv">
+                            <a href="projet.php?name=4"><div class="texte">
+                                <p>Création d'un CV artistique avec un autoportrait inspiré d'une peinture célèbre</p>
+                            </div></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <a href="#galerie"><img src="./images/petite_fleche.svg" alt="Flèche pour scroller à gauche"
+                        class="petite-fleche gauche" /></a>
+                <div>
+                    <h2>Où me contacter</h2>
+                    <div class="me-contacter">
+                        <div class="infos-contact">
+                            <div>
+                                <i class="fas fa-phone fa-3x"></i>
+                                <i class="fas fa-at fa-3x"></i>
+                                <i class="fas fa-map-marked-alt fa-3x"></i>
+                            </div>
+                            <div>
+                                <span>07.85.39.29.66</span>
+                                <span>margotdv@orange.fr</span>
+                                <span>22 rue haute Chiffolière 53000 LAVAL</span>
+                            </div>
+                        </div>
+                        <div class="reseaux-sociaux">
+                            <a href="https://www.facebook.com/margot.devilliers"><i class="fab fa-facebook fa-3x"></i></a>
+                            <a href="https://www.linkedin.com/in/margot-de-villiers-86b899227/"><i class="fab fa-linkedin fa-3x"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>Écrivez-moi !</h2>
+                    <form action="./formulaire.php" method="get">
+                        <fieldset class="infos-perso">
+                            <legend>Informations Personnelles</legend>
+                            <div>
+                                <label for="prenom">Prénom :</label>
+                                <input type="text" name="prenom" id="prenom" minlength="2" maxlength="30" required />
+                            </div>
+                            <div>
+                                <label for="nom">Nom :</label>
+                                <input type="text" name="nom" id="nom" minlength="2" maxlength="30" required />
+                            </div>
+                            <div>
+                                <label for="adresseMail">Adresse mail :</label>
+                                <input type="email" name="adresseMail" id="adresseMail" minlength="2" maxlength="30"
+                                    required />
+                            </div>
+                        </fieldset>
+                        <fieldset class="message">
+                            <legend>Écrivez-moi</legend>
+                            <div class="texte">
+                                <label for="message">Votre message :</label>
+                                <textarea name="message" id="message" required></textarea>
+                            </div>
+                        </fieldset>
+                        <input type="reset" value="Effacer" class="button reset"/>
+                        <input type="submit" value="Envoyer" class="button submit"/>
+                    </form>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+@font-face {
+    font-family: hey_august;
+    src: url(".././fonts/hey_august.ttf");
+}
+
+@font-face {
+    font-family: CaviarDreams;
+    src: url(".././fonts/CaviarDreams_Bold.ttf"); 
+}
+
+html {
+    background: linear-gradient(#F4F3EE, 70%, #CDA3A6) ;
+    background-repeat: no-repeat;
+    color: #402A32;
+    font-family: "CaviarDreams" ;
+    font-size: 2.1vh;
+}
+
+body {
+    margin: 0;
+    height: fit-content;
+}
+
+/* MENU */
+
+header {
+    background-color: #A26769;
+    color: #F4F3EE;
+    display: flex ;
+    align-items: center ;
+    height: fit-content ;
+    padding: 10px 10px ;
+    position: fixed ;
+    width: 100% ;
+    top: 0;
+    left: 0; 
+    box-sizing: border-box;
+    z-index: 1024;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    display: flex ;
+    justify-content: flex-end ;
+    width: 100% ;
+}
+
+nav a {
+    color: #F4F3EE;
+}
+
+nav a:hover {
+    color: #987B97 ;
+}
+
+h1 {
+    width: 100% ;
+    margin: 0 ;
+    font-family: 'Advent Pro', sans-serif;
+}
+h1 a {
+    color: #F4F3EE ;
+}
+
+/* BOITE RETOUR */
+
+.boite-retour {
+    display: flex;
+    align-items: center;
+    background-color: #A26769;
+    position: fixed;
+    left: 4vw;
+    top: 15vh;
+    font-size: 2rem;
+    color: #F4F3EE;
+    padding: 10px;
+    border: 2px solid #402A32;
+    border-radius: 50px;
+    width: fit-content;
+    transition-timing-function: linear;
+    transition-duration: 50ms;
+}
+
+.boite-retour:hover {
+    transform: scale(1.1);
+    background-color: #CDA3A6;
+    color: #402A32;
+    transition-timing-function: linear;
+    transition-duration: 50ms;
+}
+
+.fa-angle-double-left {
+    margin-right: 10px;
+}
+
+/* CONTENT */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 58vw;
+    align-items: center;
+    position: relative;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+}
+
+h2 {
+    font-family: 'Advent Pro', sans-serif ;
+    color: #402A32;
+    font-size:6rem ;
+    text-align: center ;
+    margin-top: 7vh;
+    margin-bottom: 6vh;
+    padding: 20px 0;
+}
+.title {
+    background: linear-gradient(#F4F3EE, 60%, #CDA3A6);
+    width: 100%;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+img {
+    margin: 4vh 0;
+    height: 90vh;
+}
+
+.note-intention {
+    width: 100%;
+    height: auto;
+}
+
+.charte {
+    filter: blur(1.5px);
+    transition-timing-function: linear;
+    transition-duration: 150ms;
+}
+
+.charte:hover {
+    filter: none;
+    transition-timing-function: linear;
+    transition-duration: 150ms;
+}

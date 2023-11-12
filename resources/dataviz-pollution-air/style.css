@@ -1,0 +1,482 @@
+:root {
+    --gris: #D0CDCB;
+    --b_clair: #C1E1EB;
+    --b: #56AFC8;
+    --b_fonce: #28697B;
+    --rouge: #B82942;
+    --orange: #F09844;
+    --noir: #1C2B3C;
+    --blanc: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Reem Kufi', sans-serif;
+}
+
+.intro{
+    display: block;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: #89D2DC;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+    opacity: 1;
+    transition: .25s ease-in-out;
+}
+
+.intro.open{
+    opacity: 0;
+    transition: .25s ease-in-out;
+
+}
+
+.intro h1{
+    font-size: 3rem;
+    text-align: center;
+    width: 66%;
+    color: var(--blanc);
+    line-height: 1.25;
+}
+
+
+.intro p{
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
+    color: #0D1321;
+}
+
+
+.intro a{
+    background-color: #20222E;
+    color: #C1E1EB;
+    padding: 15px 22.5px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.intro a:hover {
+    background-color: #100C0D;
+    transition: .5s;
+    color: #28697B;
+}
+
+div,
+svg {
+    display: none;
+}
+
+.info {
+    display: block;
+    display: flex;
+    width: 75%;
+    margin: 15px auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+@media screen and (min-width: 768px) {
+
+    div,
+    svg {
+        display: block;
+    }
+
+    .info {
+        display: none;
+    }
+
+    .legende {
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: auto;
+        border: 2px solid #313131;
+        padding: 15px;
+        position: relative;
+        display: none;
+        gap: 15px;
+        max-width: 100%;
+    }
+
+    .txt_air {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .posi_leg {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        background-color: #ffffff7e;
+        transition: .25s ease-in-out;
+    }
+
+    .posi_leg:hover {
+        background-color: var(--blanc);
+        transition: .25s ease-in-out;
+    }
+
+    .legende .entete {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .legende .entete img {
+        height: 10px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .cross.close {
+        display: none;
+    }
+
+    .part1,
+    .part2 {
+        display: flex;
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .qualite {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 15px 15px;
+        align-items: center;
+    }
+
+    .carre_txt,
+    .contour_txt {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+    }
+
+    .carre,
+    .contour {
+        height: 20px;
+        width: 20px;
+        display: flex;
+    }
+
+    .contour {
+        border: .2rem solid #313131;
+        background-color: transparent;
+    }
+
+    .pas_de_donnee {
+        background-color: var(--gris);
+    }
+
+    .moyen {
+        background-color: var(--b_clair);
+    }
+
+    .degrade {
+        background-color: var(--b);
+    }
+
+    .mauvais {
+        background-color: var(--b_fonce);
+    }
+
+    .habituel {
+        border: transparent;
+    }
+
+    .diff {
+        border-color: var(--orange);
+    }
+
+    .tres_diff {
+        border-color: var(--rouge);
+    }
+
+    .critique {
+        border-color: var(--noir);
+    }
+
+    .btn {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        cursor: pointer;
+        transition: .25s ease-in-out;
+    }
+
+    .btn:hover {
+        transform: scale(1.1);
+        transition: .25s ease-in-out;
+    }
+
+    .btn img {
+        height: 60px;
+        width: 60px;
+        transition: .5s;
+    }
+
+    .open {
+        display: flex;
+    }
+
+    .grow img {
+        opacity: 0;
+        height: 0;
+        width: 0;
+    }
+
+    .calendar {
+        display: flex;
+        flex-direction: column;
+        background-color: #F1F1F1;
+        border: 1px solid #313131;
+        position: fixed;
+    }
+
+    #calendrier-tours {
+        top: 21vh;
+        left: .5vw;
+        cursor: grab;
+    }
+
+    #calendrier-blois {
+        top: 61vh;
+        left: 59vw;
+        cursor: grab;
+    }
+
+    #calendrier-orleans {
+        top: .5vh;
+        left: 34vw;
+        cursor: grab;
+    }
+
+    select {
+        position: absolute;
+        border: 0;
+        font-weight: bold;
+        letter-spacing: .15em;
+        border-radius: 0;
+        width: 100%;
+        top: 0;
+        text-align: center;
+        font-size: 16px;
+        padding: 5px;
+        text-transform: uppercase;
+        background-color: #313131;
+        color: #ffffff;
+    }
+
+    .jour {
+        margin-top: 30px;
+        justify-content: space-around;
+        color: var(--noir);
+        padding: 5px 0;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(7, 1fr);
+    }
+
+    .grille {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-gap: 0.5rem;
+        margin: 5px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .case {
+        background-color: cadetblue;
+        height: 1.7rem;
+        width: 1.7rem;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .caseok{
+        cursor: default;
+    }
+
+    .case.trafic {
+        height: 1.3rem;
+        width: 1.3rem;
+    }
+
+    .case2 {
+        background-color: var(--b_clair);
+    }
+
+    .case3 {
+        background-color: var(--b);
+    }
+
+    .case4 {
+        background-color: var(--b_fonce);
+    }
+
+    .caseundefined {
+        background-color: var(--gris);
+    }
+
+    .trafic {
+        border: 0.2rem solid;
+    }
+
+    .trafic-2 {
+        border-color: var(--orange);
+    }
+
+    .trafic-3 {
+        border-color: var(--rouge);
+    }
+
+    .trafic-4 {
+        border-color: var(--noir);
+    }
+
+    #svg-autoroute {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+    }
+
+    .popup {
+        background-color: white;
+        border: solid;
+        border-width: 2px;
+        border-radius: 5px;
+        padding: 5px;
+        position: absolute;
+        opacity: 0;
+        z-index: 10;
+    }
+
+    #arrow {
+        width: 3.5vh;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        cursor: pointer;
+        transition: .25s ease-in-out;
+    }
+
+    #arrow:hover {
+        transform: scale(1.1);
+        transition: .25s ease-in-out;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .case {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .case.trafic {
+        height: 1.5rem;
+        width: 1.5rem;
+    }
+
+    .trafic {
+        border: 0.3rem solid;
+    }
+
+    .trafic-2 {
+        border-color: var(--orange);
+    }
+
+    .trafic-3 {
+        border-color: var(--rouge);
+    }
+
+    .trafic-4 {
+        border-color: var(--noir);
+    }
+
+    #calendrier-tours {
+        top: 23vh;
+        left: 1vw;
+    }
+
+    #calendrier-blois {
+        top: 53vh;
+        left: 63vw;
+    }
+
+    #calendrier-orleans {
+        top: 0.5vh;
+        left: 30vw;
+    }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+    .case {
+        height: 2.3rem;
+        width: 2.3rem;
+    }
+
+    .case.trafic {
+        height: 1.7rem;
+        width: 1.7rem;
+    }
+
+    .trafic {
+        border: 0.3rem solid;
+    }
+
+    .trafic-2 {
+        border-color: var(--orange);
+    }
+
+    .trafic-3 {
+        border-color: var(--rouge);
+    }
+
+    .trafic-4 {
+        border-color: var(--noir);
+    }
+
+    #calendrier-tours {
+        top: 27vh;
+        left: 3vw;
+    }
+
+    #calendrier-blois {
+        top: 50vh;
+        left: 66vw;
+    }
+
+    #calendrier-orleans {
+        top: 4vh;
+        left: 33vw;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Guitare</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="px-5 py-3">
+    <div class="d-flex">
+        <iframe id="playcanvas-iframe" src="https://playcanv.as/e/b/6c0d4b8f" style="height:80vh; width:80vh;"></iframe>
+        <div class="ml-5">
+            <h1>Personnalisez votre guitare</h1>
+            <div class="d-flex mt-4 mb-3">
+                <button id="btnBody" class="btn btn-dark active">Table et fond</button>
+                <button id="btnSide" class="btn btn-light ml-4">Éclisses</button>
+            </div>
+            <div class="">
+                <img id="texture-1" src="./images/texture_1.png" alt="light grey" class="rounded-circle imgTexture" />
+                <img id="texture-2" src="./images/texture_2.png" alt="light wood" class="rounded-circle ml-2 imgTexture" />
+                <img id="texture-3" src="./images/texture_3.png" alt="medium wood" class="rounded-circle ml-2 imgTexture selected" />
+                <img id="texture-4" src="./images/texture_4.png" alt="brown wood" class="rounded-circle ml-2 imgTexture" />
+                <img id="texture-5" src="./images/texture_5.png" alt="dark brown wood" class="rounded-circle ml-2 imgTexture" />
+                <img id="texture-6" src="./images/texture_6.png" alt="dark grey" class="rounded-circle ml-2 imgTexture" />
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+<script>
+    'use strict';
+    $(document).ready(() => {
+        
+        let btnBody = $('#btnBody');
+        let btnSide = $('#btnSide');
+        var iframe = document.getElementById('playcanvas-iframe');
+
+
+        btnBody.on('click', function() {
+            $(this).toggleClass('active btn-light btn-dark');
+            btnSide.toggleClass('active btn-light btn-dark');
+        })
+
+        btnSide.on('click', function() {
+            $(this).toggleClass('active btn-light btn-dark');
+            btnBody.toggleClass('active btn-light btn-dark');
+        })
+
+        let btnsTexture = $('.imgTexture');
+        btnsTexture.on('click', function() {
+            btnsTexture.each(function() { $(this).removeClass('selected') });
+            $(this).addClass('selected');
+        })
+
+        $('.imgTexture').on('click', function() {
+            let message = (btnBody.hasClass('active')) ? "body" : "side";
+            message = message+"-"+$(this).attr('id');
+            iframe.contentWindow.postMessage(message, '*');
+        });
+    });
+</script>
+
+</html>

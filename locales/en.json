@@ -20,7 +20,7 @@
 
   "my-skills": "MY SKILLS",
   "programming-languages": "Programming languages",
-  "libraries-frameworks": "Framewroks and librairies",
+  "libraries-frameworks": "Frameworks and librairies",
   "softwares": "Softwares",
   "languages": "Languages",
   "english": "English",
@@ -41,7 +41,7 @@
   "back": "Back",
   "posters": "POSTERS",
   "blablacar-poster": "Awareness poster for BlaBlaCar",
-  "blablacar-description": "I made this poster from a <strong>data analysis</strong> where we had noticed a correlation between road traffic and air pollution. The goal was to encourage drivers to carpool in order to limit traffic, especially for holidays departures.",
+  "blablacar-description": "I made this poster from a <strong>data analysis</strong> where we had noticed a correlation between road traffic and air pollution. The goal was to encourage drivers to carpool in order to limit traffic, especially for holiday departures.",
   "ev-poster": "Poster for a literature festival",
   "ev-description": "The aim of this project was to take a picture of an object then add a slogan for the festival Étonnants Voyageurs. The idea was to symbolize both literature and the journey conveyed by this one. I used the <strong>Affinity Suite</strong> for the realisation of the picture.",
   "tipsnfix-poster": "Advertising poster",
@@ -51,7 +51,7 @@
   "ev-leaflet": "Leaflet for a literature festival",
   "ev-leaflet-description": "Using a <strong>graphic tablet</strong> and the <strong>Affinity Photo</strong> software, I imagined and drew a brochure for the festival Étonnants Voyageurs. It is meant to be printed and folded in order to have a side with information on the festival and another one with its poster.",
   "cat-dataviz": "Data visualisation on cats",
-  "cat-dataviz-description": "On this dataviz, I drew each elements with <strong>Affinity Photo</strong> and <strong>Affinity Designer</strong>. The original form is vertical only.",
+  "cat-dataviz-description": "On this dataviz, I drew each element with <strong>Affinity Photo</strong> and <strong>Affinity Designer</strong>. The original form is vertical only.",
   "cuistoh": "Logo for a food blog",
   "cuistoh-description": "I realised this logo for a friend who has a food blog. I tried to draw her the best I could while keeping a clean style that suites to a logotype.",
   "album-cover": "Album cover",
@@ -59,17 +59,17 @@
 
   "videos-motion-design": "VIDEOS AND MOTION DESIGN",
   "explainer-panda": "Explainer for a Google plug-in",
-  "explainer-panda-description": "This video presents the Google plug-in Panda through a small story. During the shooting, I was an actress in addition of managing <strong>lights</strong> on the scenes I wasn't playing. Then I took part in the film editing where I handled <strong>splices</strong>, <strong>music</strong>, <strong>motion design</strong> and a bit of <strong>colour corrections</strong>.",
+  "explainer-panda-description": "This video presents the Google plug-in Panda through a small story. During the shooting, I was an actress in addition to managing <strong>lights</strong> in the scenes I wasn't playing in. Then I took part in the film editing where I handled <strong>splices</strong>, <strong>music</strong>, <strong>motion design</strong> and a bit of <strong>colour correction</strong>.",
   "3d-animation-blablacar": "3D animation for BlaBlaCar",
   "3d-animation-blablacar-description": "The goal of this video is to raise awareness but also advertizing. I was able to discover <strong>3D animation</strong> while using <strong>Blender</strong>. The clip is part of a project on quality of air (cf. dataviz if development projects).",
   "kiwi-motion-design": "Motion design for Kiwi's app",
   "kiwi-motion-design-description": "This motion design introduces the mobile app Kiwi. It has been created with the Fusion tab in <strong>DaVinci Resolve</strong>. We couldn't use music, only sound effects.",
-  "cv-video": "Video resume",
+  "cv-video": "Video résumé",
   "cv-video-description": "I realized this video CV during my first year in IUT with <strong>DaVinci Resolve</strong>.At that time, I didn't know the software well so I didn't use the nodes method for motion design. This project is more of a first experirence in video editing.",
 
   "websites-programmation": "WEBSITEES AND PROGRAMMATION",
   "air-hockey": "Air hockey game",
-  "air-hockey-description": "In team, we developed an air hockey game on <strong>Android Studio</strong> in only two weeks. We mainly focused ourselves on the <strong>game physic</strong> (ball speed, strike force) instead on its design. The interface contains a game history and a ranking of the best players. The app was entirely coded with <strong>Java</strong>.",
+  "air-hockey-description": "In team, we developed an air hockey game on <strong>Android Studio</strong> in only two weeks. We mainly focused ourselves on the <strong>game physic</strong> (ball speed, strike force) instead of its design. The interface contains a game history and a ranking of the best players. The app was entirely coded with <strong>Java</strong>.",
   "e-commerce-website": "E-commerce website",
   "e-commerce-website-description": "Just like the air hockey game, we developed this platform in team in only two weeks. Thanks to the <strong>WooCommerce</strong Wordpress extension, we were able to make an e-commerce website with articles fetched from the Amazon <strong>API</strong>. We used <strong>React</strong> and <strong>MobX</strong> librairy for the front part, and <strong>Symfony</strong> for the back.",
   "playcanva": "Interactive customization of a 3D object",
@@ -81,7 +81,7 @@
   "forum-wordpress-description": "During this project, I realised a <strong>Wordpress</strong> website linked to a forum developed in <strong>PHP</strong>, <strong>HTML</strong>, <strong>CSS</strong> and <strong>JavaScript</strong>. I also had the opportunity to create and manipulate a <strong>database</stronge> with <strong>MySQL</strong> language.",
   "forum-wordpress-description2": "Forum and website are hosted on a server accessible only from my school, that's why I can't embed them here.",
   "first-website": "My first website",
-  "first-website-description": "This online resume was my very first website created during my studies. It has been coded with <strong>HTML</strong>, <strong>CSS</strong> and <strong>PHP</strong> only. It contains a contact form but is however not responsive.",
+  "first-website-description": "This online résumé was my very first website created during my studies. It has been coded with <strong>HTML</strong>, <strong>CSS</strong> and <strong>PHP</strong> only. It contains a contact form but is however not responsive.",
   "my-portfolio": "My portfolio",
-  "my-portfolio-description": "And of course this portfolio is a part of my web development realisations. I used here the framework <strong>Tailwind</strong> in addition of <strong>JavaScript</strong> and of course HTML and CSS. It is <strong>responsive</strong> and accessible from a mobile phone. I made the translation using the i18n process."
+  "my-portfolio-description": "And of course this portfolio is a part of my web development realisations. I used here the framework <strong>Tailwind</strong> in addition to <strong>JavaScript</strong> and of course HTML and CSS. It is <strong>responsive</strong> and accessible from a mobile phone. I made the translation using the i18n process."
 }
