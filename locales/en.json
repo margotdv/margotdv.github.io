@@ -67,7 +67,7 @@
   "cv-video": "Video résumé",
   "cv-video-description": "I realized this video CV during my first year in IUT with <strong>DaVinci Resolve</strong>.At that time, I didn't know the software well so I didn't use the nodes method for motion design. This project is more of a first experirence in video editing.",
 
-  "websites-programmation": "WEBSITEES AND PROGRAMMATION",
+  "websites-programmation": "WEBSITES AND PROGRAMMATION",
   "air-hockey": "Air hockey game",
   "air-hockey-description": "In team, we developed an air hockey game on <strong>Android Studio</strong> in only two weeks. We mainly focused ourselves on the <strong>game physic</strong> (ball speed, strike force) instead of its design. The interface contains a game history and a ranking of the best players. The app was entirely coded with <strong>Java</strong>.",
   "e-commerce-website": "E-commerce website",
