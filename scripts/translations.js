@@ -6,11 +6,13 @@
   let currentLanguage = localStorage.getItem('selectedLanguage') || 'fr';
 
   function init() {
+    console.log(currentLanguage);
     loadTranslation(currentLanguage);
-    let languageBtns = document.querySelectorAll('.language-btn');
+    
     let cvLink = document.querySelector("#cv-link");
-
     (currentLanguage === 'en') ? cvLink.href = './resources/cv-margot-de-villiers-english.pdf' : cvLink.href = './resources/cv-margot-de-villiers.pdf';
+    
+    let languageBtns = document.querySelectorAll('.language-btn');
 
     // Ecouteur de clic sur les boutons
     languageBtns.forEach(button => {
