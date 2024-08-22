@@ -68,6 +68,10 @@
   "cv-video-description": "J'ai réalisé ce CV vidéo en première année avec <strong>DaVinci Resolve</strong>. Je ne connaissais pas encore bien le logiciel et n'avais donc pas utilisé le système de noeuds pour le motion design. Ce CV constitue plus une première expérience de montage.",
 
   "websites-programmation": "SITES WEB ET PROGRAMMATION",
+  "psi": "Plateforme web de gestion des emplois du temps",
+  "psi-description": "Ce site web constitue le projet principal de ma troisième année à l'IUT. Le but était de proposer un outil unique permettant de simplifier la gestion et création des emplois du temps, et ce à destination de l'IUT. Par équipe de cinq, nous avons développé le projet de A à Z avec une <strong>gestion de projet agile</strong> et la stack MERN pour le code : <strong>MongoDB</strong>, <strong>Express.js</strong>, <strong>React</strong> et <strong>Node.js</strong>.",
+  "zombies-shooter": "Zombies shooter en VR",
+  "zombies-shooter-description": "Ce petit projet a été développé en peu de temps par équipe de deux. Il s'agit d'un prototype de « zombies shooter » pour <strong>casque VR</strong>. Le joueur doit éliminer tous les zombies apparaissant et peut se téléporter dans les zones à proximité ainsi que changer d'arme. Ce jeu a été développé avec <strong>Unity</strong> et le langage <strong>C#</strong>.",
   "air-hockey": "Jeu de palets",
   "air-hockey-description": "En équipe, nous avons développé un jeu de palets sur <strong>Android Studio</strong> en seulement 2 semaines. Nous avons décidé de nous concentrer principalement sur la <strong>physique du jeu</strong> (vitesse de la balle, force de frappe) plutôt que sur son design. L'interface comprend un historique des parties et un classement des meilleurs joueurs et toute l'application a été développée en <strong>Java</strong>.",
   "e-commerce-website": "Site d'e-commerce",

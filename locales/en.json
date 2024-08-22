@@ -68,6 +68,10 @@
   "cv-video-description": "I realized this video CV during my first year in IUT with <strong>DaVinci Resolve</strong>.At that time, I didn't know the software well so I didn't use the nodes method for motion design. This project is more of a first experirence in video editing.",
 
   "websites-programmation": "WEBSITES AND PROGRAMMATION",
+  "psi": "Webapp for managing IUT's schedules",
+  "psi-description": "This website constitutes the main project of my third year at the IUT. The goal was to propose a unique tool to simplify the management and creation of schedules, specifically for the IUT. In a team of five, we developed the project from A to Z with an <strong>agile project management</strong> approach and the MERN stack for the code: <strong>MongoDB</strong>, <strong>Express.js</strong>, <strong>React</strong>, and <strong>Node.js</strong>.",
+  "zombies-shooter": "Zombies shooter in VR",
+  "zombies-shooter-description": "This small project was developed in a short time by a team of two. It is a prototype of a 'zombies shooter' for a <strong>VR headset</strong>. The player must eliminate all the zombies appearing and can teleport to nearby areas as well as change weapons. This game was developed with <strong>Unity</strong> and the <strong>C#</strong> language.",
   "air-hockey": "Air hockey game",
   "air-hockey-description": "In team, we developed an air hockey game on <strong>Android Studio</strong> in only two weeks. We mainly focused ourselves on the <strong>game physic</strong> (ball speed, strike force) instead of its design. The interface contains a game history and a ranking of the best players. The app was entirely coded with <strong>Java</strong>.",
   "e-commerce-website": "E-commerce website",
