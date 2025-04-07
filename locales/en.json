@@ -9,7 +9,7 @@
   "contact": "Contact",
 
   "my-cv": "My CV",
-  "presentation-text": "French student in last year of multimedia and Internet crafts, I'm looking for a 14-weeks <strong>internship</strong> in <strong>web development</strong> from the 1st of April to the 26th of July.",
+  "presentation-text": "Young graduate in computer science, I am looking for a <strong>full-stack development apprenticeship</strong> for a period of <strong>2 years</strong>, available starting in July. My favorite technologies are TypeScript, React, and Node.js, but I am also comfortable with other languages and libraries such as Java, PHP, and Symfony. The apprenticeship schedule is 3 or 2 weeks in the company for 1 week of classes.",
   "my-formation": "EDUCATION",
   "but-formation": "2021 - 2024 : <abbr title='Bachelor Universitaire de Technologie' class='no-underline'>BUT</abbr> <abbr title=`Métiers du Multimédia et de l'Internet` class='no-underline'>MMI</abbr> in Laval",
   "but-description-formation": "Web development, programming, computer graphics, audiovisual, communication",
@@ -73,7 +73,7 @@
   "zombies-shooter": "Zombies shooter in VR",
   "zombies-shooter-description": "This small project was developed in a short time by a team of two. It is a prototype of a 'zombies shooter' for a <strong>VR headset</strong>. The player must eliminate all the zombies appearing and can teleport to nearby areas as well as change weapons. This game was developed with <strong>Unity</strong> and the <strong>C#</strong> language.",
   "air-hockey": "Air hockey game",
-  "air-hockey-description": "In team, we developed an air hockey game on <strong>Android Studio</strong> in only two weeks. We mainly focused ourselves on the <strong>game physic</strong> (ball speed, strike force) instead of its design. The interface contains a game history and a ranking of the best players. The app was entirely coded with <strong>Java</strong>.",
+  "air-hockey-description": "In team, we developed an air hockey game on <strong>Android Studio</strong> in only two weeks. We mainly focused ourselves on the <strong>game physic</strong> (ball speed, strike force) instead of its design. The interface contains a game history and a ranking of the best players. The app was entirely coded with <strong>Java</strong>. It is designed to be used on touch tables, mimicking an air hockey table and allowing multiple people to play at the same time.",
   "e-commerce-website": "E-commerce website",
   "e-commerce-website-description": "Just like the air hockey game, we developed this platform in team in only two weeks. Thanks to the <strong>WooCommerce</strong Wordpress extension, we were able to make an e-commerce website with articles fetched from the Amazon <strong>API</strong>. We used <strong>React</strong> and <strong>MobX</strong> librairy for the front part, and <strong>Symfony</strong> for the back.",
   "playcanva": "Interactive customization of a 3D object",

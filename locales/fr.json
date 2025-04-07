@@ -9,7 +9,7 @@
   "contact": "Contact",
 
   "my-cv": "Mon CV",
-  "presentation-text": "Étudiante en 3ème année de <strong>BUT MMI</strong> (Métiers du Multimédia et de l'Internet) à Laval, je recherche un <strong>stage</strong> en <strong>développement web</strong> d'une durée de 14 semaines ou plus, sur la période du 2 avril au 26 juillet.",
+  "presentation-text": "Récemment diplômée d'un <strong>BUT MMI</strong> (Métiers du Multimédia et de l'Internet) à Laval, je recherche une <strong>alternance</strong> en <strong>développement fullstack</strong>, pour une période de <strong>2 ans</strong>, disponible à partir de juillet. Mes technologies favorites sont TypeScript, React et Node.js, mais je suis également à l'aise avec d'autres langages et libraires tels que Java, PHP et Symfony. Le rythme d'alternance est de 3 ou 2 semaines en entreprise pour 1 semaine de cours.",
   "my-formation": "MA FORMATION",
   "but-formation": "2021 - 2024 : <abbr title='Bachelor Universitaire de Technologie' class='no-underline'>BUT</abbr> <abbr title=`Métiers du Multimédia et de l'Internet` class='no-underline'>MMI</abbr> à Laval",
   "but-description-formation": "Programmation, intégration web, infographie, audiovisuel, communication",
@@ -73,7 +73,7 @@
   "zombies-shooter": "Zombies shooter en VR",
   "zombies-shooter-description": "Ce petit projet a été développé en peu de temps par équipe de deux. Il s'agit d'un prototype de « zombies shooter » pour <strong>casque VR</strong>. Le joueur doit éliminer tous les zombies apparaissant et peut se téléporter dans les zones à proximité ainsi que changer d'arme. Ce jeu a été développé avec <strong>Unity</strong> et le langage <strong>C#</strong>.",
   "air-hockey": "Jeu de palets",
-  "air-hockey-description": "En équipe, nous avons développé un jeu de palets sur <strong>Android Studio</strong> en seulement 2 semaines. Nous avons décidé de nous concentrer principalement sur la <strong>physique du jeu</strong> (vitesse de la balle, force de frappe) plutôt que sur son design. L'interface comprend un historique des parties et un classement des meilleurs joueurs et toute l'application a été développée en <strong>Java</strong>.",
+  "air-hockey-description": "En équipe, nous avons développé un jeu de palets sur <strong>Android Studio</strong> en seulement 2 semaines. Nous avons décidé de nous concentrer principalement sur la <strong>physique du jeu</strong> (vitesse de la balle, force de frappe) plutôt que sur son design. L'interface comprend un historique des parties et un classement des meilleurs joueurs et toute l'application a été développée en <strong>Java</strong>. Cette dernière est faite pour être utilisée sur des tables tactiles, mimant ainsi une table d'air hockey et permettant à plusieurs personnes de jouer en même temps.",
   "e-commerce-website": "Site d'e-commerce",
   "e-commerce-website-description": "De la même manière que le jeu de palets, nous avons développé cette plateforme en équipe et en deux semaine. Grâce à l'extension WordPress <strong>WooCommerce</strong>, nous avons créé un site de commerce en ligne avec des articles récupérés grâce à l'<strong>API</strong> d'Amazon. Nous avons utilisé <strong>React</strong> et la librairie <strong>MobX</strong> pour le front, et <strong>Symfony</strong> pour le back.",
   "playcanva": "Personnalisation interactive d'un objet 3D",
